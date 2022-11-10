@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Webshop</title>
+</head>
+
+<body>
+    <div id="main">
+        <div class="header" id="myHeader">
+            <div id="navbar">
+                <label id="land-select">Uw land van herkomst:</label>
+                <select>
+                    <option>Nederland</option>
+                    <option>België</option>
+                    <option>Duitsland</option>
+                    <option>Frankrijk</option>
+                    <option>Verenigd Koninkrijk</option>
+                    <option>Ierland</option>
+                    <option>Polen</option>
+                    <option>Luxemburg</option>
+                    <option>Italië</option>
+                    <option>Spanje</option>
+                    <option>Portugal</option>
+                    <option>Griekenland</option>
+                    <option>Oostenrijk</option>
+                    <option>Tsjechië</option>
+                    <option>Slowakije</option>
+                    <option>Malta</option>
+                    <option>Cyprus</option>
+                    <option>Letland</option>
+                    <option>Estland</option>
+                    <option>Lithouwen</option>
+                    <option>Noorwegen</option>
+                    <option>Zweden</option>
+                    <option>Finland</option>
+                    <option>Roemenië</option>
+                    <option>Hongarije</option>
+                    <option>Armenië</option>
+                    <option>Albanië</option>
+                    <option>Montenegro</option>
+                    <option>Bulgarije</option>
+                    <option>Bosnië</option>
+                    <option>Monaco</option>
+                    <option>Vaticaan Stad</option>
+                    <option>San Marino</option>
+                    <option>Andorra</option>
+                    <option>Oekraiëne</option>
+                </select>
+                <div id="btns">
+                    <button class="header-nav1">Home
+                    </button>
+                    <button class="header-nav1">Muurdecoratie
+                    </button>
+                    <button class="header-nav1">Doosjes
+                    </button>
+                    <button class="header-nav1">Opbergers
+                    </button>
+                    <button class="header-nav1">Gadgets
+                    </button>
+                    <button class="header-nav1">Search</button>
+                    <button class="header-nav1">Vergelijk</button>
+                    <button class="header-nav1">Winkelwagen</button>
+                    <span class="header-nav-right-2">(2)</span>
+                </div>
+                <div id="navbar-nav">
+                    <a class="navbar-nav-links" href="" target="_blank"><span>Mijn account</span></a> |
+                    <a class="navbar-nav-links" href="" target="_blank"><span>Afrekenen</span></a> |
+                    <a class="navbar-nav-links" href="" target="_blank"><span>Inloggen</span></a>
+                </div>
+            </div>
+
+            
+        </div>
+        <script>
+            window.onscroll = function () { myFunction() };
+
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
+            <div id="left">
+                <div id="left-title">
+                    <a><span>Home</span></a><span> > Doosjes</span>
+                </div>
+                <div id="left-doosje">Doosjes
+                    <div class="sub-cat">
+                        <span>> Subcategorie 1</span><br>
+                        <span>> Subcategorie 2</span><br>
+                        <span>> Subcategorie 3</span>
+                    </div>
+                </div>
+                <div id="left-selectie"><span>Uw selectie verfijnen</span>
+                    <div class="sub-cat">
+                        <div id="left-selectie-title">
+                            <span>Materiaal verfijnen</span>
+                        </div>
+                        <span>> Subcategorie 1</span><br>
+                        <span>> Subcategorie 2</span><br>
+                        <span>> Subcategorie 3</span>
+                    </div>
+                </div>
+                <div id="left-prijs">
+                    <p>Prijs</p>
+                    <input type="range" id="prijs-select" min="0" max="1000"><br>
+                    <span id="prijs-text-left">&euro;0,00</span><span id="prijs-text-right">&euro;75,00</span>
+                </div>
+                <div id="left-recent-bekeken">
+                    <p>Recent bekeken</p>
+                    <div id="left-recent-bekeken-title">
+                        <img id="metal-crate-foto"
+                            src="https://images.bibelotandco.fr/uploads/images/coffrecaisse-en-metal_imgx500_9646.webp"
+                            alt="foto-metal-crate">
+                        <div id="product-title">
+                            <p id="product-title-title">Metalen doosje</p>
+                            <p id="product-title-price1">&euro;11,95</p>
+                            <p id="product-title-price2">&euro;13,95</p>
+                        </div>
+                    </div>
+                </div>
+                <form>
+                    <div id="left-nieuwsbrief">
+                        <p>Nieuwsbrief</p>
+                        <div class="submit-center">
+                            <input type="email" required id="nieuwsbrief-email"><br>
+                            <input type="submit" class="input-style" value="Inschrijven">
+                        </div>
+                    </div>
+                </form>
+                <div id="left-product-vergelijken">Producten<br>vergelijken
+                    <div id="left-product-alt-select">
+                        <p>X &nbsp;&nbsp; Set van vierkante doosjes</p>
+                        <p>X &nbsp;&nbsp; Set van vierkante doosjes</p>
+                        <div class="submit-center">
+                            <input type="submit" class="input-style" value="Vergelijken">
+                            <p>X &nbsp;&nbsp; Annuleren</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="right">
+                <div class="producten producten-top">
+                    <div class="product-title"><b>Electric Scooter</b></div><img
+                        src="https://m.media-amazon.com/images/I/61JtvvZEI5L._AC_SL1500_.jpg" class="product-foto"
+                        alt="foto-step">
+                        <div class="product-price">&euro; 399,99</div>
+                    <div class="product-price-2">&euro; 299,99<button class="addtocard"><img
+                                src="https://cdn-icons-png.flaticon.com/512/263/263142.png" class="addtocard-picture"
+                                alt="addtocard-pic"></button></div>
+                </div>
+                <div class="producten producten-top">
+                    <div class="product-title"><b>Electric Scooter</b></div><img
+                        src="https://m.media-amazon.com/images/I/61JtvvZEI5L._AC_SL1500_.jpg" class="product-foto"
+                        alt="foto-step">
+                        <div class="product-price">&euro; 399,99</div>
+                    <div class="product-price-2">&euro; 299,99<button class="addtocard"><img
+                                src="https://cdn-icons-png.flaticon.com/512/263/263142.png" class="addtocard-picture"
+                                alt="addtocard-pic"></button></div>
+                </div>
+                <div class="producten producten-top">
+                    <div class="product-title"><b>Electric Scooter</b></div><img
+                        src="https://m.media-amazon.com/images/I/61JtvvZEI5L._AC_SL1500_.jpg" class="product-foto"
+                        alt="foto-step">
+                        <div class="product-price">&euro; 399,99</div>
+                    <div class="product-price-2">&euro; 299,99<button class="addtocard"><img
+                                src="https://cdn-icons-png.flaticon.com/512/263/263142.png" class="addtocard-picture"
+                                alt="addtocard-pic"></button></div>
+                </div>
+                <div class="producten producten-top">
+                    <div class="product-title"><b>Electric Scooter</b></div><img
+                        src="https://m.media-amazon.com/images/I/61JtvvZEI5L._AC_SL1500_.jpg" class="product-foto"
+                        alt="foto-step">
+                        <div class="product-price">&euro; 399,99</div>
+                    <div class="product-price-2">&euro; 299,99<button class="addtocard"><img
+                                src="https://cdn-icons-png.flaticon.com/512/263/263142.png" class="addtocard-picture"
+                                alt="addtocard-pic"></button></div>
+                </div>
+                <div class="producten">
+                    <div class="product-title"><b>Electric Scooter</b></div><img
+                        src="https://m.media-amazon.com/images/I/61JtvvZEI5L._AC_SL1500_.jpg" class="product-foto"
+                        alt="foto-step">
+                        <div class="product-price">&euro; 399,99</div>
+                    <div class="product-price-2">&euro; 299,99<button class="addtocard"><img
+                                src="https://cdn-icons-png.flaticon.com/512/263/263142.png" class="addtocard-picture"
+                                alt="addtocard-pic"></button></div>
+                </div>
+                <div class="producten">
+                    <div class="product-title"><b>Electric Scooter</b></div><img
+                        src="https://m.media-amazon.com/images/I/61JtvvZEI5L._AC_SL1500_.jpg" class="product-foto"
+                        alt="foto-step">
+                        <div class="product-price">&euro; 399,99</div>
+                    <div class="product-price-2">&euro; 299,99<button class="addtocard"><img
+                                src="https://cdn-icons-png.flaticon.com/512/263/263142.png" class="addtocard-picture"
+                                alt="addtocard-pic"></button></div>
+                </div>
+                <div class="producten">
+                    <div class="product-title"><b>Electric Scooter</b></div><img
+                        src="https://m.media-amazon.com/images/I/61JtvvZEI5L._AC_SL1500_.jpg" class="product-foto"
+                        alt="foto-step">
+                        <div class="product-price">&euro; 399,99</div>
+                    <div class="product-price-2">&euro; 299,99<button class="addtocard"><img
+                                src="https://cdn-icons-png.flaticon.com/512/263/263142.png" class="addtocard-picture"
+                                alt="addtocard-pic"></button></div>
+                </div>
+                <div class="producten">
+                    <div class="product-title"><b>Electric Scooter</b></div><img
+                        src="https://m.media-amazon.com/images/I/61JtvvZEI5L._AC_SL1500_.jpg" class="product-foto"
+                        alt="foto-step">
+                        <div class="product-price">&euro; 399,99</div>
+                    <div class="product-price-2">&euro; 299,99<button class="addtocard"><img
+                                src="https://cdn-icons-png.flaticon.com/512/263/263142.png" class="addtocard-picture"
+                                alt="addtocard-pic"></button></div>
+                </div>
+                <div class="producten">
+                    <div class="product-title"><b>Electric Scooter</b></div><img
+                        src="https://m.media-amazon.com/images/I/61JtvvZEI5L._AC_SL1500_.jpg" class="product-foto"
+                        alt="foto-step">
+                        <div class="product-price">&euro; 399,99</div>
+                    <div class="product-price-2">&euro; 299,99<button class="addtocard"><img
+                                src="https://cdn-icons-png.flaticon.com/512/263/263142.png" class="addtocard-picture"
+                                alt="addtocard-pic"></button></div>
+                </div>
+                <div class="producten">
+                    <div class="product-title"><b>Electric Scooter</b></div><img
+                        src="https://m.media-amazon.com/images/I/61JtvvZEI5L._AC_SL1500_.jpg" class="product-foto"
+                        alt="foto-step">
+                        <div class="product-price">&euro; 399,99</div>
+                    <div class="product-price-2">&euro; 299,99<button class="addtocard"><img
+                                src="https://cdn-icons-png.flaticon.com/512/263/263142.png" class="addtocard-picture"
+                                alt="addtocard-pic"></button></div>
+                </div>
+                <div class="producten">
+                    <div class="product-title"><b>Electric Scooter</b></div><img
+                        src="https://m.media-amazon.com/images/I/61JtvvZEI5L._AC_SL1500_.jpg" class="product-foto"
+                        alt="foto-step">
+                        <div class="product-price">&euro; 399,99</div>
+                    <div class="product-price-2">&euro; 299,99<button class="addtocard"><img
+                                src="https://cdn-icons-png.flaticon.com/512/263/263142.png" class="addtocard-picture"
+                                alt="addtocard-pic"></button></div>
+                </div>
+                <div class="producten">
+                    <div class="product-title"><b>Electric Scooter</b></div><img
+                        src="https://m.media-amazon.com/images/I/61JtvvZEI5L._AC_SL1500_.jpg" class="product-foto"
+                        alt="foto-step">
+                        <div class="product-price">&euro; 399,99</div>
+                    <div class="product-price-2">&euro; 299,99<button class="addtocard"><img
+                                src="https://cdn-icons-png.flaticon.com/512/263/263142.png" class="addtocard-picture"
+                                alt="addtocard-pic"></button></div>
+                </div>
+            </div>
+        
+        <div id="footer"></div>
+    </div>
+</body>
+
+</html>
